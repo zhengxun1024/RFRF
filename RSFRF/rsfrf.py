@@ -36,7 +36,6 @@ class DecisionTreeClassifier:
         self.classes_ = np.unique(y)
         self.n_centroids = n_centroids
         self.all_centroids = t_centroids
-        depth = 1
 
         self.tree_ = tree.fit_tree(X, y, self.max_depth, self.classes_, features_indices, X_degree, t_memberships, n_centroids, t_centroids)
 
